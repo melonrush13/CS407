@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.melonrush13.quizapp.SecondQ"
+    android:id="@+id/melonrush13"
+    android:background="#F5A20A">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="What was the breed of the dog in the picture?"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:textColor="#040404" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Golden Retriever"
+        android:id="@+id/goldenRetrieverBox"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pug"
+        android:id="@+id/pugBox"
+        android:layout_below="@+id/goldenRetrieverBox"
+        android:layout_alignLeft="@+id/goldenRetrieverBox"
+        android:layout_alignStart="@+id/goldenRetrieverBox"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dalmatian"
+        android:id="@+id/dalmatianBox"
+        android:layout_below="@+id/pugBox"
+        android:layout_alignLeft="@+id/pugBox"
+        android:layout_alignStart="@+id/pugBox"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poodle"
+        android:id="@+id/poodleBox"
+        android:layout_below="@+id/dalmatianBox"
+        android:layout_alignLeft="@+id/dalmatianBox"
+        android:layout_alignStart="@+id/dalmatianBox"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chihuahua"
+        android:id="@+id/chihuahuaBox"
+        android:layout_below="@+id/poodleBox"
+        android:layout_alignLeft="@+id/poodleBox"
+        android:layout_alignStart="@+id/poodleBox"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beagle"
+        android:id="@+id/beagleBox"
+        android:layout_below="@+id/chihuahuaBox"
+        android:layout_alignLeft="@+id/chihuahuaBox"
+        android:layout_alignStart="@+id/chihuahuaBox"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/qTwoSubmit"
+        android:layout_below="@+id/beagleBox"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

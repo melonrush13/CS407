@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.melonrush13.quizapp.FirstQ"
+    android:background="#F5A20A">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="What is this a picture of?"
+        android:id="@+id/textPrompt"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/dogImage"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="269dp"
+        android:layout_height="252dp"
+        android:id="@+id/dogImage"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/dog"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userInput"
+        android:layout_below="@+id/dogImage"
+        android:layout_alignLeft="@+id/dogImage"
+        android:layout_alignStart="@+id/dogImage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_alignBottom="@+id/userInput"
+        android:layout_alignRight="@+id/dogImage"
+        android:layout_alignEnd="@+id/dogImage" />
+
+</RelativeLayout>
